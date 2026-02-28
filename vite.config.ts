@@ -10,7 +10,7 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  base: '/Landingpageparainfoproduto/',
+  base: '/Landingpageparainfoproduto/', // Alterar para o nome do seu repositório
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
