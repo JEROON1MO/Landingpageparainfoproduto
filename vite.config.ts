@@ -10,14 +10,15 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  base: '/Landingpageparainfoproduto/', // Alterar para o nome do seu repositório
+  base: '/Landingpageparainfoproduto/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      'react/jsx-runtime': 'react/jsx-runtime.js',
     },
   },
   build: {
+    outDir: 'dist',
+    sourcemap: false,
     commonjsOptions: {
       transformMixedEsModules: true,
     },
